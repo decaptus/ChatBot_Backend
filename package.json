@@ -1,0 +1,25 @@
+{
+  "name": "chatbot_backend",
+  "version": "1.0.0",
+  "description": "Backend del chatbot",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js",
+    "dev": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/decaptus/ChatBot_Backend.git"
+  },
+  "author": "Eric Mata",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/decaptus/ChatBot_Backend/issues"
+  },
+  "homepage": "https://github.com/decaptus/ChatBot_Backend#readme",
+  "dependencies": {
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2"
+  }
+}
