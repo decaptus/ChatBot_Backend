@@ -9,12 +9,13 @@ router.get('/:id', async function(req,res){
         const sqlQuery = 'SELECT id, email, password, created_at FROM user WHERE id=?';
         const rows = await pool.query(sqlQuery, req.params.id);
         res.status(200).json(rows);
+        console.log("Solicitada info de " + req.params.id)
     } catch (error) {
         res.status(400).send(error.message)
     }
 
 
-    res.status(200).json({id:req.params.id})
+    //res.status(200).json({id:req.params.id})
 });
 
 router.post('/register', async function(req,res) {
@@ -50,4 +51,4 @@ router.post('/login', async function(req,res) {
     }
 })
 
-module.exports = router;
+module.exports = router;    
